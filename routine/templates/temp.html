@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+
+<body>
+
+<table border = "1">
+    <tr>
+        <th colspan = "4"> <h1> Status Report</h1> </th>
+
+    </tr>
+    <tr>
+        <th> Department </th>
+        <th> Morning Service </th>
+        <th> Afternoon Service </th>
+        <th> Evening Service </th>
+
+    </tr>
+    {% for dept in departments %}
+    <tr>
+        <td> {{ dept.name }} </td>
+        <td> {{ dept.morning }} </td>
+        <td> {{ dept.afternoon }} </td>
+        <td> {{ dept.evening }} </td>
+     </tr>
+     {% endfor %}
+    </table>
+    </body>
+

@@ -1,0 +1,22 @@
+{% block body %}
+<form method="post" action=".">
+<p><h1>Truss Tasks </h1></p>
+{% csrf_token %}
+
+Set Up The Truss<input type ="checkbox" name="TrussTask" value = "Set Up The Truss"/>
+
+<br/>
+
+<p><h1> Service </h1></p>
+
+Morning Service <input type ="radio" name="service" value = "morning"/>
+Afternoon Service <input type ="radio" name="service" value = "afternoon"/>
+Evening Service <input type ="radio" name="service" value = "evening"/>
+
+<br/>
+<br/>
+
+<input type = "submit" value="Submit">
+
+</form>
+{% endblock %}

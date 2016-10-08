@@ -1,0 +1,15 @@
+{% block body %}
+<form method="post" action=".">
+<p><h1>Inventory Tasks </h1></p>
+{% csrf_token %}
+
+Maintain Inventory <input type ="checkbox" name="InventoryTask" value = "Maintain Inventory"/>
+
+<br/>
+    {% include "service.html" %}
+<br/>
+
+<input type = "submit" value="Submit">
+
+</form>
+{% endblock %}

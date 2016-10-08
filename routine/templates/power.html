@@ -1,0 +1,23 @@
+{% block body %}
+<form method="post" action=".">
+<p><h1>Power Tasks </h1></p>
+{% csrf_token %}
+
+Check Voltage At Different Power Points <input type ="checkbox" name="VoltageTask" value = "Check Voltage At Different Power Points"/>
+
+<br/>
+
+A/c's <input type ="checkbox" name="AcTask" value = "A/c's"/>
+
+<br/>
+
+Generator <input type ="checkbox" name="GeneratorTask" value = "Generator"/>
+
+<br/>
+{% include "service.html" %}
+<br/>
+
+<input type = "submit" value="Submit">
+
+</form>
+{% endblock %}

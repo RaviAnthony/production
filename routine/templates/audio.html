@@ -1,0 +1,27 @@
+
+{% block body %}
+<form method="post" action=".">
+<p><h1>Audio Tasks </h1></p>
+{% csrf_token %}
+
+Line Check <input type ="checkbox" name="LineTask" value = "Line Check"/>
+
+<br/>
+
+Sound Check <input type ="checkbox" name="SoundTask" value = "Sound Check"/>
+
+<br/>
+
+Change Over <input type ="checkbox" name="ChangeTask" value = "Change Over"/>
+
+<br/>
+
+{% include "service.html" %}
+
+<br/>
+<br/>
+
+<input type = "submit" value="Submit">
+
+</form>
+{% endblock %}

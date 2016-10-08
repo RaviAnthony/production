@@ -1,0 +1,24 @@
+{% block body %}
+<form method="post" action=".">
+<p><h1>Stage Tasks </h1></p>
+{% csrf_token %}
+
+Set Up Stage For Line Check <input type ="checkbox" name="SetupTask" value = "Set Up Stage For Line Check"/>
+
+<br/>
+
+Swap Batteries <input type ="checkbox" name="SwapTask" value = "Swap Batteries"/>
+
+<br/>
+
+Trouble Shoots <input type ="checkbox" name="ShootsTask" value = "Trouble Shoots"/>
+
+<br/>
+
+{% include "service.html" %}
+<br/>
+
+<input type = "submit" value="Submit">
+
+</form>
+{% endblock %}

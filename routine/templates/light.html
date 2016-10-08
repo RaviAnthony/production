@@ -1,0 +1,26 @@
+{% block body %}
+<form method="post" action=".">
+<p><h1>Lights Tasks </h1></p>
+{% csrf_token %}
+
+Program Cues For Songs <input type ="checkbox" name="CuesTask" value = "Program Cues For Songs"/>
+
+<br/>
+
+Hall Lights Manage <input type ="checkbox" name="HallTask" value = "Hall Lights Manage"/>
+
+<br/>
+
+Change over <input type ="checkbox" name="ChangeoverTask" value = "Change over"/>
+
+<br/>
+
+
+{% include "service.html" %}
+
+<br/>
+
+<input type = "submit" value="Submit">
+
+</form>
+{% endblock %}

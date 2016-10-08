@@ -1,0 +1,31 @@
+{% block body %}
+<form method="post" action=".">
+<p><h1>Media Tasks </h1></p>
+{% csrf_token %}
+
+Select Background <input type ="checkbox" name="BackgroundTask" value = "Select Background"/>
+
+<br/>
+
+Lyrics <input type ="checkbox" name="LyricsTask" value = "Lyrics"/>
+
+<br/>
+
+News Video <input type ="checkbox" name="NewsTask" value = "News Video"/>
+
+<br/>
+
+    PPTS <input type ="checkbox" name="PPTSTask" value = "PPTS"/>
+
+<br/>
+
+
+{% include "service.html" %}
+
+<br/>
+<br/>
+
+<input type = "submit" value="Submit">
+
+</form>
+{% endblock %}
